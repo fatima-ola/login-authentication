@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './LoginPage.css';
-// import bootstrap from '../node_modules/bootsrap/dist/css/boostrap.min.css';
+// import bootstrap from '../../node_modules/bootstrap/dist/css/min.css';
 
 function LoginPage() {
-  // const [username, setusername] = useState('');
-  // const [password, setpassword] = useState('');
+  const [username, setusername] = useState('');
+  const [password, setpassword] = useState('');
   return (
     <div>
       <div className='row justify-content-center'>
@@ -15,12 +15,20 @@ function LoginPage() {
               type='text'
               placeholder='Username'
               className='form-control'
+              value={username}
+              onChange={(e) => {
+                setusername(e.target.value);
+              }}
             />
             <br />
             <input
               type='text'
               placeholder='Password'
               className='form-control'
+              value={password}
+              onChange={(e) => {
+                setpassword(e.target.value);
+              }}
             />
             <br />
             <button className='btn btn-primary'>Login</button>

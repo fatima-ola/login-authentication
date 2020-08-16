@@ -1,10 +1,19 @@
-.col-md-4 {
-  margin-top: 150px;
-  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-  padding: 20px;
-  border-radius: 5px;
-}
-
 input {
   margin-top: 10px;
+}
+
+.col-md-4 {
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 200px;
+  width: 30%;
+}
+
+button {
+  background-color: cornflowerblue;
+  color: #ffffff;
+  border-radius: 5px;
 }
