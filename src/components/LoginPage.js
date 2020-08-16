@@ -3,6 +3,15 @@ import './LoginPage.css';
 // import bootstrap from '../../node_modules/bootstrap/dist/css/min.css';
 
 function LoginPage() {
+  function validateForm(event) {
+    event.preventDefault();
+    if (username === 'Fatima' && password === 'react') {
+      alert('Login is Successful');
+    } else {
+      alert('Login is failed');
+    }
+  }
+
   const [username, setusername] = useState('');
   const [password, setpassword] = useState('');
   return (
@@ -10,7 +19,7 @@ function LoginPage() {
       <div className='row justify-content-center'>
         <div className='col-md-4'>
           <h1>User Authentication</h1>
-          <form>
+          <form onSubmit={validateForm}>
             <input
               type='text'
               placeholder='Username'
