@@ -45,7 +45,7 @@ function LoginPage() {
               }}
             />
             <br />
-            <button className='btn btn-primary'>Login</button>
+            <button>Login</button>
           </form>
         </div>
       </div>

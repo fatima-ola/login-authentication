@@ -16,4 +16,7 @@ button {
   background-color: cornflowerblue;
   color: #ffffff;
   border-radius: 5px;
+  border-color: cornflowerblue;
+  margin-top: 10px;
+  padding: 5px 15px;
 }
