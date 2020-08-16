@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
 import './LoginPage.css';
 // import bootstrap from '../../node_modules/bootstrap/dist/css/min.css';
+import swal from 'sweetalert';
 
 function LoginPage() {
   function validateForm(event) {
     event.preventDefault();
     if (username === 'Fatima' && password === 'react') {
-      alert('Login is Successful');
+      swal(
+        'LogIn Successfully!',
+        'Congratulations, your login is Successfully',
+        'success'
+      );
     } else {
-      alert('Login is failed');
+      swal('Login Failed!', 'Please check your details again', 'error');
     }
   }
 
